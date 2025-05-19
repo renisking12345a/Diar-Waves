@@ -1,0 +1,259 @@
+/* Global Styles */
+/* Fixed Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5A3EAA; /* Deep purple */
+    padding: 20px 0; /* Increased padding for better spacing */
+    text-align: center;
+    z-index: 1000;
+    border-radius: 0px 0px 15px 15px; /* Soft edges */
+}
+
+/* Navbar Shrink on Scroll */
+.scrolled {
+    padding: 15px 0; /* Shrinks navbar */
+    background-color: #3E2A7A; /* Darker navbar */
+}
+
+/* Navbar Links */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Even spacing between links */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #FFFACD; /* Soft yellow */
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Navbar Hover Effect */
+nav ul li a:hover {
+    color: #FEF8EA; /* Light background */
+}
+
+/* Fix Body Padding to Prevent Overlap */
+body {
+    padding-top: 100px; /* Adjusted so navbar doesn’t cover content */
+    color: #FEF8EA;}
+
+
+/* Header Styling */
+header h1 {
+    font-size: 32px;
+    margin-top: 20px; /* Extra space to prevent navbar overlap */
+    color: #5A3EAA; /* Deep purple */
+}
+
+/* Promotional Banner */
+#promo-banner {
+    background-color: #3E2A7A; /* Dark purple */
+    color: #FFFACD; /* Soft yellow */
+    padding: 20px;
+    text-align: center; /* Center content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#promo-banner h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#promo-banner button {
+    padding: 12px 24px;
+    background-color: #FFFACD; /* Soft yellow */
+    color: #3E2A7A; /* Dark purple */
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+#promo-banner button:hover {
+    background-color: #3E2A7A;
+    color: #FFFACD;
+    transform: scale(1.05);
+}
+
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #3E2A7A; /* Dark purple */
+    color: #FFFACD; /* Light yellow */
+    transform: scale(1.05);
+}
+
+/* Section Fade-in Animation */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Promo Banner Pulse Animation */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #5A3EAA; /* Soft contrast against beige */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Paragraph Text */
+p {
+    color: #3E2A7A; /* Dark purple for high readability */
+}
+
+/* Shop Section */
+#shop {
+    text-align: center;
+    padding: 40px;
+}
+
+#shop h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #5A3EAA;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: #FFFACD;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.product p {
+    font-size: 18px;
+    color: #3E2A7A;
+}
+
+.product button {
+    padding: 8px 15px;
+    background-color: #5A3EAA;
+    border: none;
+    color: #FFFACD;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #3E2A7A;
+}
+/* Empty Product Slots */
+.product.empty {
+    background-color: #EDEDED;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px dashed #3E2A7A; /* Dashed border for placeholders */
+}
+
+.product.empty p {
+    font-size: 18px;
+    color: #3E2A7A; /* Styled to match brand colors */
+}
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 40px;
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #5A3EAA;
+}
+
+/* Contact Info */
+.contact-info {
+    font-size: 18px;
+    color: #3E2A7A;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #3E2A7A;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #5A3EAA;
+    border: none;
+    color: #FFFACD;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3E2A7A;
+}
+
+
